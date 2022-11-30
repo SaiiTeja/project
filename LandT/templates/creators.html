@@ -1,0 +1,78 @@
+{% load static %}
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="{% static 'creators.css' %}">
+        <link rel="stylesheet" href="{% static 'navbar.css' %}">
+    </head>
+    <body>
+        <nav>
+            <a href="#">Home</a>
+            <a href="/products">Products</a>
+            {% if user.is_authenticated %}
+                <a href="/logout">Log out</a>
+            {% else %}
+                <a href="/login">Login</a>
+                <a href="/sign_up">Sign up</a>
+                
+            {% endif %}
+            <a href="/creators">creators</a>
+        </nav>
+        <div class="card">
+            <div class="card-header">
+                <img src="media/chandu.jpg" width="100%" height="200px" />
+            </div>
+            <div class="card-body">
+                <table>
+                    <caption>
+                        #TECHCHANDU <br /><br /><br />
+                    </caption>
+                    <tr>
+                        <td>
+                            <b>Name</td>
+                        </td>
+                        <td>
+                            Venna Chandra Sekhar Reddy
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Roll Number</b>
+                        </td>
+                        <td>
+                            20417-wd-031
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="media/sai teja.jpeg" width="100%" height="200px" />
+            </div>
+            <div class="card-body">
+                <table>
+                    <caption>
+                        #SAITHEGREAT@ <br /><br /><br />
+                    </caption>
+                    <tr>
+                        <td>
+                            <b>Name</td>
+                        </td>
+                        <td>
+                            Nallapaneni Sai Teja
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Roll Number</b>
+                        </td>
+                        <td>
+                            20417-wd-018
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

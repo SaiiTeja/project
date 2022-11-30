@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+}
+.main-img {
+    position: absolute;
+}
+.img-body {
+    position: absolute;
+    color:white;
+
+    font-size: 40;
+    padding: 250px;
+    padding-left: 350px;
+    margin-top: 30px;
+    text-shadow: 5px 3px 20px green;
+}
+h1:hover{
+    color:rgba(11, 21, 112, 0.463);
+
+}
+a {
+    text-decoration: none;
+    color: antiquewhite;
+}

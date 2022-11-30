@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+}
+.card {
+    width:50%;
+    height:250px;
+    box-shadow: 5px 10px 30px black;
+    margin:auto;
+    margin-top:40px;
+   
+}
+.card-header {
+    background-color: rgb(47, 47, 47);
+    color: white;
+    font-size: 30;
+    padding: 20px;
+}
+table,table tr td  input{
+    width: 100%;
+    font-size: 22px;
+
+}
+table tr td{
+    width:50%;
+
+}
+input[type="submit"]{
+    background-color:rgb(13, 202, 13);
+    color: whitesmoke;
+    border: none;
+}
+input[type="submit"]:hover{
+    background-color: rgb(8, 107, 8);
+}
+#id{
+    text-decoration: none;
+}
+#id:hover{
+    color:blue;
+}
+.danger {
+    background-color: rgb(97, 0, 0);
+    color:red;
+    padding: 10px;
+}

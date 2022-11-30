@@ -1,0 +1,70 @@
+{% load static %}
+<html>
+    <head>
+        <title>
+            login
+        </title>
+        <link rel="stylesheet" href="{% static 'navbar.css' %}">    
+        <link rel="stylesheet" href="{% static 'login.css' %}"> 
+    </head>
+    <body>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/products">Products</a>
+            <a href="/login">Login</a>
+            <a href="/sign_up">Sign up</a>
+            <a href="/creators">creators</a>
+        </nav>
+        <div class="card">
+            {% if error == "" %}
+            {% else %}
+                <div class="danger">
+                    <h2>
+                        {{error}}
+                    </h2>
+                </div>
+            {% endif %}
+            <div class="card-header">
+                Login
+            </div>
+            <div class="card-body">
+                <form method="POST" action="/login">
+                    {% csrf_token %}
+                    <table>
+                        <tr>
+                            <td>
+                               username 
+                            </td>
+                            <td>
+                                <input type="text" name="username" placeholder="Enter your username"/>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                               Password 
+                            </td>
+                            <td>
+                                <input type="password" name="password" placeholder="Enter your password"/>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" value="Login"/>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            
+                            <td>
+                                doesn't register please  <a href="/sign_up" id="id" >register</a>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

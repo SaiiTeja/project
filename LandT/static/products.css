@@ -1,0 +1,26 @@
+* {
+    margin:0;
+}
+body{
+    background-color: aqua;
+    color: blue;
+}
+.card {
+    margin:10px;
+    width:20%;
+    height:300px;
+    display: inline-block;
+    box-shadow: 5px 3px 30px rgb(143, 235, 6);
+    background-color: antiquewhite;
+    color: black;
+}
+.card-body table {
+    width:100%;
+    color: black;
+}
+table tr td {
+    width:50%;
+}
+.sai{
+    color:rgb(8, 17, 195);
+}

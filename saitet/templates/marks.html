@@ -1,0 +1,36 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form method="POST" action="/">
+            {% csrf_token %}
+            <input type="text" name="rollnum" />
+            <input type="submit" value="submit" />
+        </form>
+        <table>
+            <tr>
+                <th>sl.no</th>
+                <th>roll_num</th>
+                <th>name</th>
+                <th>marks</th>
+            </tr>
+            {% for row in data %}
+                <tr>
+                    <td>
+                        {{row.id}}
+                    </td>
+                    <td>
+                        {{row.roll_num}}
+                    </td>
+                    <td>
+                        {{row.name}}
+                    </td>
+                    <td>
+                        {{row.marks}}
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
